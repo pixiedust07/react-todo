@@ -1,13 +1,42 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn {
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ccc;
+  transition: transform .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.btn:active {
+  transform: scale(.9);
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 1rem auto 0;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+}
+
+.container .task-btn {
+  background-color: steelblue;
+  color: #fff;
 }
